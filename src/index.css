@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.WelcomeBanner img{
+  float:left;
+  margin-right:50px;
+  margin-left: 30px;
+  height:450px;
+  width:500px;
+}
+.WelcomeBanner{
+  margin-top:130px;
+}
+
+.Navs{
+  width:100%;
+  line-height: 65px;
+  position:fixed;
+  top:0px;
+  display:flexbox;
+  flex-direction: column;
+border-width: 100%;
+background-color:#fefbfd ;
+z-index:2;
+opacity: 0.9;border-bottom: 5px solid #fefbfd;
+/*background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);/*box-shadow:0px 3px rgb(230,230,250) ;*/
+}
+.Navs ul{
+  margin-top:0px;
+}
+.Navs ul a{
+text-align:left;
+margin:0px;
+margin-left:40px;
+text-decoration: none;
+color:none;
+box-sizing:border-box;
+font-family: 20px 'inherit';
+font-weight:400;
+line-height: 1;  
+color:black;
+font-family: Arial, Helvetica, sans-serif;
+font-size:medium;
+letter-spacing: 1.4px;
+}
+
+.Navs img{
+  float: left;
+  padding-left:0px;
+  height: 81px;
+  width:auto; 
+  margin-left: 0px;
+}
+
+ .Navs  ul  a:hover{
+border-bottom:2px solid black;
+}
