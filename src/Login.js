@@ -3,28 +3,28 @@ import { Box, Container } from "@mui/system";
 import React from   "react";
 import MediaQuery from "react-responsive";
 import TextField from '@mui/material/TextField';
-
 import history from "./history";
+import Fetch from "./Fetch"
 
 export default function Login() {
   function check(){
-history.push('/Home');  
+    /*const mongoose=require('mongoose');*/
+   <Fetch/>
+   history.push('/Home');  
   }
   function ulogin(){
     history.push('/Login')
   }
-  
+
   return (
            <div>
-        
            <MediaQuery minWidth={1024}>
           <Container>
-
            <Box sx={{height: '500px', width:'85%',marginLeft:'10%',marginTop:'5%', borderRadius:'16px',bgcolor:'#ffffff' }}>
               <img src={require("./Images/Signin.png")} sx={{height:'100%'}} style={{float:'left',marginRight:'80px'}}/> 
           
           <Typography variant="h3" sx={{marginTop:'5%',marginBottom:'0px'}}>
-              Online pharmacy Store
+              Web Meds Online pharmacy store
            </Typography>
 
            <TextField

@@ -1,10 +1,13 @@
 import React from "react";
 /*import Card from '@mui/material/Card';*/
-import { Typography } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import {Link} from 'react-router-dom'
 import { TextField } from "@mui/material";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 /*import { BrowserRouter } from "react-router-dom";*/
+
+
+
  export default function Home(){
     return(
         <div>
@@ -17,7 +20,8 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Banner=()=>{
     return(
-            <div className="WelcomeBanner">  
+        <Paper elevation={10} sx={{height:'500px',width:'1200px',marginLeft:'100px'}}>
+            <div className="WelcomeBanner" sx={{backgroundColor:'1d1817'}}>  
                <img src={require("./Images/Signin.png")} alt="off"/> 
               <div padding-left="30px"className="headers">
                <h1 padding="left" >
@@ -34,7 +38,8 @@ const Banner=()=>{
                 We can assure with the lowest price and great deals and we also have easy returns.</Typography>
                 <br></br>
                    </div>
-                   </div>                    
+                   </div>       
+        </Paper>             
         )
 }
 
@@ -47,7 +52,7 @@ return(
         <img src={require("./Images/webmeds.png")}/>
     </Link>
     <Link to="/Home">Home  </Link>
-    <Link to="/Tablets">TabletS  </Link>
+    <Link to="/Tablets">Tablets  </Link>
     <Link to="/Medical Accessories">Medical Accessories  </Link>
     <TextField
              required
@@ -57,13 +62,13 @@ return(
              size="medium"
              sx={{marginTop:'10px',marginLeft:'100px'}}
              />
-    <ShoppingCartIcon sx={{marginLeft:'250px',fontSize:30,}} onClick={()=>{
-               console.log('onclciked');
-            }}
-    />    
+    <Link to="/Cart"><ShoppingCartIcon sx={{marginLeft:'250px',fontSize:30,"&:hover": { cursor:'pointer'}, }}/>    </Link>
     </ul>  
 
     </div>
     </div>)
 }
 
+
+
+export {Navs}

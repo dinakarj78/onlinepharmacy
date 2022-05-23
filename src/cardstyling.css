@@ -1,0 +1,43 @@
+root{
+    position:relative;
+    left: 1%;
+    width:350px;
+    height:max-content;
+   /* "&:hover":{
+        zIndex:99
+        transitionDuration:5s
+        cursor:pointer 
+        width:60%
+        height:80%
+        position:fixed
+        backgroundColor:#FFFFFF
+        top:10%
+        bottom:0
+        left:25%
+        overflow:scroll
+    }*/
+}
+
+.media{
+    height:0;
+    padding-top:50%;
+}
+
+.price{
+    display:flex;
+    justify-content:felx-start;
+font-family:18px Amazon Ember ;
+color:black;
+margin-right:auto;
+}
+.content{
+    font-family:14px Amazon Ember ;
+}
+.title{
+    font-family:19px Amazon Ember;
+}
+.addtoCart{
+    display:flex;
+    justify-content:flex-end;
+    margin-left:auto;
+}

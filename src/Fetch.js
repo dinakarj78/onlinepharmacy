@@ -12,7 +12,7 @@ class Fetch extends Component {
   }
 
   componentDidMount(){
-    axios.get('http://localhost:4000/getData')
+    axios.get('http://localhost:4001/getMe')
     .then((res) =>{
      this.setState({
          data: res.data
@@ -25,8 +25,8 @@ class Fetch extends Component {
      this.state.data.map( (data)=>{
         return(
           <div key={data}> 
-            <p >{data.name}</p>
-            <p>{data.year}</p>
+            <p >{data.Email}</p>
+            <p>{data.password}</p>
           </div>
         )
      })

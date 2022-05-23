@@ -18,5 +18,8 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "no-console": "on",
+            "react/jsx-uses-vars": "error",
+
     }
 }

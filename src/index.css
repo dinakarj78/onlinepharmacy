@@ -66,3 +66,10 @@ letter-spacing: 1.4px;
  .Navs  ul  a:hover{
 border-bottom:2px solid black;
 }
+
+.paperStyles{
+  width:400px;
+  height:300px;
+  margin:auto;
+  margin-top:180px
+}
